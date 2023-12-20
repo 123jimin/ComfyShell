@@ -8,6 +8,9 @@ dependencies:
   '@reduxjs/toolkit':
     specifier: ^2.0.1
     version: 2.0.1
+  arktype:
+    specifier: 1.0.28-alpha
+    version: 1.0.28-alpha
   preact:
     specifier: ^10.19.3
     version: 10.19.3
@@ -769,6 +772,10 @@ packages:
     dependencies:
       color-convert: 1.9.3
     dev: true
+
+  /arktype@1.0.28-alpha:
+    resolution: {integrity: sha512-cjakiZXXa4+y1OL0oFk0HRjIrEwJhNNvkqXkiR53SOpyKHwSqFrjrQkY4K8MlnQybRhd/y4OG4NVDR1Ea4WDkQ==}
+    dev: false
 
   /babel-plugin-transform-hook-names@1.0.2(@babel/core@7.23.6):
     resolution: {integrity: sha512-5gafyjyyBTTdX/tQQ0hRgu4AhNHG/hqWi0ZZmg2xvs2FgRkJXzDNKBZCyoYqgFkovfDrgM8OoKg8karoUvWeCw==}
