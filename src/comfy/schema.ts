@@ -1,3 +1,3 @@
-import { type } from 'arktype';
+import 'arktype';
 
-export const workflow = type({});
+// TODO

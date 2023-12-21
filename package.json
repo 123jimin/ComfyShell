@@ -8,10 +8,16 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "browserslist": [
+    "default"
+  ],
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
     "arktype": "1.0.28-alpha",
+    "litegraph.js": "^0.7.14",
     "preact": "^10.19.3",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat",
     "redux-saga": "^1.2.3"
   },
   "devDependencies": {

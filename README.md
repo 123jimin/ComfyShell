@@ -46,8 +46,8 @@ Each input control in ComfyShell corresponds to a node in a ComfyUI workflow, id
 To expose a parameter to ComfyShell:
 
 1. Add a primitive node: right click &gt; "Add Node" &gt; "utils" &gt; "Primitive"
-2. Change its title by right click &gt; "Title"; the title should start with `UI:` (such as `UI: model`).
+2. Change its title by right click &gt; "Title"; the title should start with `#` (such as `#modelName`).
 3. Right click on the parameter &gt; "Convert ... to input"
-4. Connect 1 and 3.
+4. Connect the newly created input and the primitive node.
 
 Each primitive node should possess different titles.

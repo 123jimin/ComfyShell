@@ -7,13 +7,22 @@ settings:
 dependencies:
   '@reduxjs/toolkit':
     specifier: ^2.0.1
-    version: 2.0.1
+    version: 2.0.1(@preact/compat@17.1.2)
   arktype:
     specifier: 1.0.28-alpha
     version: 1.0.28-alpha
+  litegraph.js:
+    specifier: ^0.7.14
+    version: 0.7.14
   preact:
     specifier: ^10.19.3
     version: 10.19.3
+  react:
+    specifier: npm:@preact/compat
+    version: /@preact/compat@17.1.2(preact@10.19.3)
+  react-dom:
+    specifier: npm:@preact/compat
+    version: /@preact/compat@17.1.2(preact@10.19.3)
   redux-saga:
     specifier: ^1.2.3
     version: 1.2.3
@@ -526,6 +535,14 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
+  /@preact/compat@17.1.2(preact@10.19.3):
+    resolution: {integrity: sha512-7pOZN9lMDDRQ+6aWvjwTp483KR8/zOpfS83wmOo3zfuLKdngS8/5RLbsFWzFZMGdYlotAhX980hJ75bjOHTwWg==}
+    peerDependencies:
+      preact: '*'
+    dependencies:
+      preact: 10.19.3
+    dev: false
+
   /@preact/preset-vite@2.7.0(@babel/core@7.23.6)(preact@10.19.3)(vite@5.0.10):
     resolution: {integrity: sha512-m5N0FVtxbCCDxNk55NGhsRpKJChYcupcuQHzMJc/Bll07IKZKn8amwYciyKFS9haU6AgzDAJ/ewvApr6Qg1DHw==}
     peerDependencies:
@@ -618,7 +635,7 @@ packages:
     resolution: {integrity: sha512-1dgmkh+3so0+LlBWRhGA33ua4MYr7tUOj+a9Si28vUi0IUFNbff1T3sgpeDJI/LaC75bBYnQ0A3wXjn0OrRNBA==}
     dev: false
 
-  /@reduxjs/toolkit@2.0.1:
+  /@reduxjs/toolkit@2.0.1(@preact/compat@17.1.2):
     resolution: {integrity: sha512-fxIjrR9934cmS8YXIGd9e7s1XRsEU++aFc9DVNMFMRTM5Vtsg2DCRMj21eslGtDt43IUf9bJL3h5bwUlZleibA==}
     peerDependencies:
       react: ^16.9.0 || ^17.0.0 || ^18
@@ -630,6 +647,7 @@ packages:
         optional: true
     dependencies:
       immer: 10.0.3
+      react: /@preact/compat@17.1.2(preact@10.19.3)
       redux: 5.0.0
       redux-thunk: 3.1.0(redux@5.0.0)
       reselect: 5.0.1
@@ -952,6 +970,10 @@ packages:
   /kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
     dev: true
+
+  /litegraph.js@0.7.14:
+    resolution: {integrity: sha512-xVC0a/D3uLZkpdV/HxyrruDIWM0vMOoIhgaUQXYymQ8pKgbeQZKR0OfuI0c7IpQxC+M/uoc9BRDl2Fm0Q3bW0w==}
+    dev: false
 
   /lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
